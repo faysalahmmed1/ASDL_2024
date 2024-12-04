@@ -1,50 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-[#ECF3F1]">
-  <!--header start here-->
-  <!--nav start here-->
-  <div class="overflow-x-hidden">
-    <header class="text-slate-700 relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-10 lg:mx-auto lg:flex-row lg:items-center">
-      <a href="#" class="flex items-center whitespace-nowrap text-2xl font-semibold">
-        <span class="mr-2 w-8">
-          <img src="/images/JOJj79gp_Djhwdp_ZOKLL.png" alt="" />
-        </span>
-        Hector De Castro
-      </a>
-      <input type="checkbox" class="peer hidden" id="navbar-open" achecked />
-      <label class="absolute top-5 right-5 cursor-pointer lg:hidden" for="navbar-open">
-        <span class="sr-only">Toggle Navigation</span>
-        <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </label>
-      <nav aria-label="Header Navigation" class="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row">
-        <ul class="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
-          <li class="lg:mr-6"><a class="text-xl font-semibold text-gray-900" href="#">About</a></li>
-          <li class="lg:mr-6"><a class="text-xl font-semibold text-gray-900" href="#">Services</a></li>
-          <li class="lg:mr-6"><a class="text-xl font-semibold text-gray-900" href="#">Works</a></li>
-          <li class="lg:mr-6"><a class="text-xl font-semibold text-gray-900" href="#">Pricing</a></li>
-          <li class="lg:mr-6"><a class="text-xl font-semibold text-gray-900" href="#">Blog</a></li>
-          <li class="lg:mr-6"><a class="text-xl font-semibold text-gray-900" href="#">Contact</a></li>
-        </ul>
-        <hr class="mt-4 w-full lg:hidden" />
-        <div class="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
-          <a href="#" title="" class="whitespace-nowrap rounded-xl  border border-black hover:bg-[#448C74] px-8 py-3 font-medium text-gray-900 hover:text-white hover:border-none transition-all duration-500">Hire Me
-          </a>
-        </div>
-      </nav>
-    </header>
-  
-  </div>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--tailwind css cdn-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--google font cdn-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+    </style>
+    <!--font awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#ECF3F1] poppins-font">
+    <!--header start here-->
+    <!--nav start here-->
+    <div class="overflow-x-hidden">
+      <header
+        class="text-slate-700 relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-10 lg:mx-auto lg:flex-row lg:items-center"
+      >
+        <a
+          href="#"
+          class="flex items-center whitespace-nowrap text-2xl font-semibold"
+        >
+          <span class="mr-2 w-8">
+            <img src="/images/JOJj79gp_Djhwdp_ZOKLL.png" alt="" />
+          </span>
+          Hector
+        </a>
+        <input type="checkbox" class="peer hidden" id="navbar-open" achecked />
+        <label
+          class="absolute top-5 right-5 cursor-pointer lg:hidden"
+          for="navbar-open"
+        >
+          <span class="sr-only">Toggle Navigation</span>
+          <svg
+            class="h-7 w-7"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </label>
+        <nav
+          aria-label="Header Navigation"
+          class="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row"
+        >
+          <ul
+            class="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0"
+          >
+            <li class="lg:mr-6">
+              <a
+                class="text-xl text-gray-900 hover:text-[#448C74] transition duration-500"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li class="lg:mr-6">
+              <a
+                class="text-xl text-gray-900 hover:text-[#448C74] transition duration-500"
+                href="#"
+                >Services</a
+              >
+            </li>
+            <li class="lg:mr-6">
+              <a
+                class="text-xl text-gray-900 hover:text-[#448C74] transition duration-500"
+                href="#"
+                >Works</a
+              >
+            </li>
+            <li class="lg:mr-6">
+              <a
+                class="text-xl text-gray-900 hover:text-[#448C74] transition duration-500"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+            <li class="lg:mr-6">
+              <a
+                class="text-xl text-gray-900 hover:text-[#448C74] transition duration-500"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li class="lg:mr-6">
+              <a
+                class="text-xl text-gray-900 hover:text-[#448C74] transition duration-500"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <hr class="mt-4 w-full lg:hidden" />
+          <div
+            class="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0"
+          >
+            <a
+              href="#"
+              title=""
+              class="whitespace-nowrap rounded-xl border border-black hover:bg-[#448C74] px-8 py-3 font-medium text-gray-900 hover:text-white hover:border-none transition-all duration-500"
+              >Hire Me <i class="fa-regular fa-handshake"></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!--nav end here-->
+    <!--hero area start here-->
+    <div class="mx-auto mb-20 max-w-screen-xl">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-2">
+        <div class="p-4 bg-white  rounded-3xl lg:row-span-2 text-center">
+          <div class="rounded-full h-56 w-56 overflow-hidden mx-auto my-10">
+            <img alt="content" class="object-cover object-center h-full w-full" src="./images/profile_img.jpeg">
+          </div>
+          <h2 class="text-xl md:text-4xl text-black my-5">
+            Hector De Castro
+          </h2>
 
-    
-  <!--nav end here-->
-  <!--header end here-->
-</body>
+          <p class="text-base md:text-xl font-normal text-[#444444] ">
+            I am a Web Designer based in san francisco.
+          </p>
+          <div class="bg-white w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
+            <a href="javascript:;"
+            class="py-4 px-4 rounded-lg flex items-center border  border-gray-300 justify-center duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-[#448C74] transition">
+            <i class="fa-brands fa-facebook w-4"></i></a>
+            <a href="javascript:;"
+            class="py-4 px-4 rounded-lg flex items-center border  border-gray-300 justify-center duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-[#448C74] transition">
+            <i class="fa-brands fa-x-twitter w-4"></i></a>
+            <a href="javascript:;"
+            class="py-4 px-4 rounded-lg flex items-center border  border-gray-300 justify-center  duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-[#448C74] transition">
+            <i class="fa-brands fa-linkedin-in w-4"></i></a>
+            <a href="javascript:;"
+            class="py-4 px-4 rounded-lg flex items-center border  border-gray-300 justify-center  duration-500 hover:border-gray-100 hover:bg-gray-100 hover:text-[#448C74] transition">
+            <i class="fa-brands fa-github w-4"></i></a>
+            </div>
+        </div>
+        <div
+          class="p-4 bg-white shadow border rounded-[10px] lg:col-span-2 flex justify-between gap-5"
+        >
+          <div>
+            <button class="p-3 py-4 bg-[#F5F8FF] rounded-[10px] cursor-default">
+              <svg
+                width="21"
+                height="13"
+                viewBox="0 0 21 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21 0L14.3528 12.8765H8.05945L10.8101 7.61233H10.6832C8.37078 10.5927 4.91823 12.5553 0 13V7.6855C0 7.6855 3.1455 7.50067 4.99585 5.57067H0.0023098V0H5.71431L5.61596 4.58333H5.74275L8.03687 0H12.5781L12.2834 4.555H12.4103L14.7885 0H21Z"
+                  fill="#5B54FF"
+                />
+              </svg>
+            </button>
+
+            <p class="font-[Inter] text-lg text-[#252432] my-5">Webflow</p>
+
+            <p class="font-[Inter] text-sm text-[#8987A1] font-[400]">
+              From concept to launch, we create stunning, user-centric websites
+              that elevate your brand and engage your audience.
+            </p>
+          </div>
+          <div>
+            <img
+              class="hidden lg:block mt-5 rounded-[10px]"
+              src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=400"
+              alt="Pictures"
+            />
+          </div>
+        </div>
+        <div
+          class="p-4 bg-white  border rounded-[10px] lg:col-span-2 flex justify-between gap-5"
+        >
+          <div>
+            <button class="p-3 py-4 bg-white rounded-[10px] cursor-default">
+              <svg
+                width="21"
+                height="13"
+                viewBox="0 0 21 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21 0L14.3528 12.8765H8.05945L10.8101 7.61233H10.6832C8.37078 10.5927 4.91823 12.5553 0 13V7.6855C0 7.6855 3.1455 7.50067 4.99585 5.57067H0.0023098V0H5.71431L5.61596 4.58333H5.74275L8.03687 0H12.5781L12.2834 4.555H12.4103L14.7885 0H21Z"
+                  fill="#5B54FF"
+                />
+              </svg>
+            </button>
+
+            <p class="font-[Inter] text-lg text-[#252432] my-5">Webflow</p>
+
+            <p class="font-[Inter] text-sm text-[#8987A1] font-[400]">
+              From concept to launch, we create stunning, user-centric websites
+              that elevate your brand and engage your audience.
+            </p>
+          </div>
+          <div>
+            <img
+              class="hidden lg:block mt-5 rounded-[10px]"
+              src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=400"
+              alt="Pictures"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--hero area end here-->
+    <!--header end here-->
+  </body>
 </html>
