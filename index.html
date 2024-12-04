@@ -6,33 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--tailwind css cdn-->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!--google font cdn-->
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-    .poppins-font {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-style: normal;
-    }
-  </style>
+  <!-- CSS style file -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
   <!--font awesome cdn-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-[#ECF3F1] poppins-font">
-  <!--header start here-->
-  <!--nav start here-->
-  <div class="overflow-x-hidden">
-    <header
-      class="text-slate-700 relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-10 lg:mx-auto lg:flex-row lg:items-center">
-      <a href="#" class="flex items-center whitespace-nowrap text-2xl font-semibold">
+<body class="bg-[#ECF3F1] poppins-font pt-28">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="fixed inset-0 bg-black flex items-center justify-center z-50">
+    <h1 class="loader-text">Hector De Castro</h1>
+  </div>
+
+  <!--header section start-->
+  <section id="main-content"
+    class="overflow-x-hidden opacity-0 container bg-[#ECF3F1] fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <header id="main-header"
+      class="text-black flex max-w-screen-xl flex-col py-8 pl-2 lg:pl-0 lg:mx-auto lg:flex-row lg:items-center">
+      <a href="#" class="flex items-center whitespace-nowrap lg:text-4xl md:text-2xl text-xl font-semibold">
         Hector
       </a>
       <input type="checkbox" class="peer hidden" id="navbar-open" achecked />
-      <label class="absolute top-5 right-5 cursor-pointer lg:hidden" for="navbar-open">
+      <label id="toggle" class="absolute top-8 right-5 cursor-pointer lg:hidden" for="navbar-open">
         <span class="sr-only">Toggle Navigation</span>
         <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -69,14 +69,16 @@
         </div>
       </nav>
     </header>
-  </div>
-  <!--nav end here-->
-  <!--hero area start here-->
-  <div class="mx-auto mb-20 max-w-screen-xl">
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-2">
+  </section>
+  <!--Header section end-->
+
+
+  <!--hero section area start-->
+  <main class="mx-auto mb-20 max-w-screen-xl">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 py-2">
       <div class="p-4 bg-white  rounded-3xl lg:row-span-2 text-center">
         <div class="rounded-full h-56 w-56 overflow-hidden mx-auto my-10">
-          <img alt="content" class="object-cover object-center h-full w-full" src="./images/profile_img.jpeg">
+          <img alt="content" class="object-cover object-center h-full w-full" src="./assets/images/profile_img.jpeg">
         </div>
         <h2 class="text-xl md:text-4xl text-black my-5">
           Hector De Castro
@@ -147,9 +149,12 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--hero area end here-->
-  <!--header end here-->
+  </main>
+  <!--hero section area end-->
+
+  <!-- Link to the JavaScript file -->
+  <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
