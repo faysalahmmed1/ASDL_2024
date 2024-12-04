@@ -196,5 +196,19 @@ p {
   }
   to {
     transform: rotate(360deg);
+#text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+.RightToLeft {
+  animation: RightToLeft 12s infinite linear;
+}
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-30%);
   }
 }
