@@ -37,3 +37,14 @@ window.addEventListener("scroll", () => {
         toggle.classList.remove("top-3");
     }
 });
+
+
+// Scroller
+document.querySelectorAll('.scroller').forEach((scroller) => {
+    const speed = scroller.getAttribute('data-speed') || '100s';
+    const direction = scroller.getAttribute('data-direction') || 'left';
+
+    const inner = scroller.querySelector('.scroller__inner');
+    inner.style.animationDuration = speed;
+    inner.style.animationDirection = direction === 'left' ? 'normal' : 'reverse';
+});

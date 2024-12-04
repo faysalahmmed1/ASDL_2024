@@ -102,7 +102,6 @@ p {
   background: var(--primary-color);
   color: #fff;
   cursor: pointer;
-  display: inline-block;
   border: 1px solid var(--button-border);
   font-size: 14px;
   font-weight: 500;
@@ -111,7 +110,91 @@ p {
   border-radius: 15px;
   padding: 12px 24px;
   text-align: center;
+  justify-content: center;
   text-transform: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  position: relative; /* Ensure proper scrolling context */
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  display: flex;
+  width: max-content; /* Ensure it accommodates all child elements */
+  flex-wrap: nowrap;
+  gap: 1rem;
+  animation: scroll var(--_animation-duration, 100s) linear infinite; /* Scroll animation */
+}
+
+.scroller[data-direction="left"] .scroller__inner {
+  animation-direction: normal; /* Scroll left to right */
+}
+
+.scroller[data-direction="right"] .scroller__inner {
+  animation-direction: reverse; /* Scroll right to left */
+}
+
+.scroller__inner h4 {
+  font-size: 24px;
+  white-space: nowrap; /* Prevent text wrapping */
+  margin: 0;
+}
+
+.image-container {
+  position: relative;
+  width: 200px; /* Adjust to your desired size */
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px dashed #5cb85c; /* Dashed border */
+  animation: rotate 20s linear infinite; /* Rotate animation */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

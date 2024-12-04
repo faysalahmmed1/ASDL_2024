@@ -84,8 +84,11 @@
 
       <!-- Profile section Start -->
       <div class="p-10 bg-white  rounded-[20px] lg:row-span-2 text-center">
-        <div class="rounded-full h-56 w-56 overflow-hidden mx-auto my-10">
-          <img alt="content" class="object-cover object-center h-full w-full" src="./assets/images/profile_img.jpeg">
+        <div class="rounded-full h-72 w-72 overflow-hidden mx-auto my-10 image-container">
+          <div>
+            <img alt="content" class="object-cover object-center h-full w-full p-3"
+              src="./assets/images/profile_img.jpeg">
+          </div>
         </div>
         <h2 class="text-xl md:text-4xl text-black my-5 mt-12">
           Hector De Castro
@@ -124,41 +127,53 @@
         </h2>
         <div class="adress-field">
           <ul>
-            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-circle-fill text-[#448C74] mr-3" viewBox="0 0 16 16">
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-circle-fill text-[#448C74] mr-2" viewBox="0 0 16 16">
                 <circle cx="6" cy="6" r="6" />
-              </svg><span class="text-base font-normal">Available for Freelancing</span></li>
+              </svg><span class="text-base font-normal">Available for Freelancing</span>
+            </li>
           </ul>
         </div>
-        <div class="hero-btns mt-7">
-          <a href="#contact" class="theme-btn">Download CV <i class="bi bi-download"></i></a>
+        <div class="mt-7 inline-block">
+          <a href="#contact"
+            class="theme-btn outline-none focus:ring-4 shadow-lg transform active:scale-x-75 transition-transform flex">
+
+            <span class="mr-2">Download CV</span>
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
         </div>
       </div>
 
       <!-- About Card 2 -->
-      <div class="p-4 bg-white  border rounded-[20px] lg:col-span-2 flex justify-between gap-5">
-        <div>
-          <button class="p-3 py-4 bg-white rounded-[10px] cursor-default">
-            <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M21 0L14.3528 12.8765H8.05945L10.8101 7.61233H10.6832C8.37078 10.5927 4.91823 12.5553 0 13V7.6855C0 7.6855 3.1455 7.50067 4.99585 5.57067H0.0023098V0H5.71431L5.61596 4.58333H5.74275L8.03687 0H12.5781L12.2834 4.555H12.4103L14.7885 0H21Z"
-                fill="#5B54FF" />
-            </svg>
-          </button>
-
-          <p class="font-[Inter] text-lg text-[#252432] my-5">Webflow</p>
-
-          <p class="font-[Inter] text-sm text-[#8987A1] font-[400]">
-            From concept to launch, we create stunning, user-centric websites
-            that elevate your brand and engage your audience.
-          </p>
-        </div>
-        <div>
-          <img class="hidden lg:block mt-5 rounded-[10px]"
-            src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=400"
-            alt="Pictures" />
+      <div class="p-4 bg-white border rounded-[20px] lg:col-span-2 flex justify-between gap-5">
+        <div class="about-content-part-bottom wow fadeInUp delay-0-2s w-full content-center">
+          <div class="company-list">
+            <div class="scroller" data-direction="left" data-speed="100s" data-animated="true">
+              <div class="scroller__inner text-2xl">
+                <h4>Working as a creative &amp; outsource your fashion design project &amp; get it quickly done and
+                  delivered remotely online.</h4>
+                <h4>I’m a professional who is responsible for the overall design and user experience of a product.</h4>
+                <h4>Digital agencies can vary in size and specialization.</h4>
+                <h4>Some may focus on specific niches.</h4>
+                <h4>Offer a wide range of services to help businesses.</h4>
+                <!-- Duplicate content for infinite scrolling -->
+                <h4 aria-hidden="true">Working as a creative &amp; outsource your fashion design project &amp; get it
+                  quickly done and delivered remotely online.</h4>
+                <h4 aria-hidden="true">I’m a professional who is responsible for the overall design and user experience
+                  of a product.</h4>
+                <h4 aria-hidden="true">Digital agencies can vary in size and specialization.</h4>
+                <h4 aria-hidden="true">Some may focus on specific niches.</h4>
+                <h4 aria-hidden="true">Offer a wide range of services to help businesses.</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <!-- About Section End -->
 
 
