@@ -26,12 +26,12 @@ const toggle = document.getElementById("toggle");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-        header.classList.add("py-3", "border-b", "border-b-black");
+        header.classList.add("py-3", "border-b", "border-b-slate-500");
         header.classList.remove("py-8");
         toggle.classList.add("top-3");
         toggle.classList.remove("top-8");
     } else {
-        header.classList.remove("py-3", "border-b", "border-b-black");
+        header.classList.remove("py-3", "border-b", "border-b-slate-500");
         header.classList.add("py-8");
         toggle.classList.add("top-8");
         toggle.classList.remove("top-3");
