@@ -20,6 +20,8 @@
 
   <!-- bootstrap CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- Swiper CDN -->
 </head>
 
 <body class="bg-[#ECF3F1] poppins-font lg:pt-28 pt-24 px-2">
@@ -56,7 +58,7 @@
             <a class="text-base text-gray-900 hover:text-[#448C74] transition duration-500" href="#works">Works</a>
           </li>
           <li class="lg:mr-6">
-            <a class="text-base text-gray-900 hover:text-[#448C74] transition duration-500" href="#pricing">Pricing</a>
+            <a class="text-base text-gray-900 hover:text-[#448C74] transition duration-500" href="#price">Pricing</a>
           </li>
           <li class="lg:mr-6">
             <a class="text-base text-gray-900 hover:text-[#448C74] transition duration-500" href="#blog">Blog</a>
@@ -83,7 +85,7 @@
     <div id="about" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 py-2">
 
       <!-- Profile section Start -->
-      <div class="p-10 bg-white  rounded-[20px] lg:row-span-2 text-center">
+      <div class="p-10 bg-white rounded-[20px] lg:row-span-2 text-center">
         <div class="rounded-full h-56 w-56 overflow-hidden mx-auto my-10 image-container">
           <div>
             <img alt="content" class="object-cover object-center h-full w-full p-3"
@@ -177,53 +179,60 @@
 
 
   <!-- service section start -->
-  <section>
-
-    <div class="bg-gray-50 text-red-500">
-      <section class="py-12 bg-gray-50">
-        <div class="max-w-screen-lg mx-auto px-4">
-          <h2 class="text-sm text-center text-gray-500 uppercase tracking-wide mb-2">Services</h2>
-          <h1 class="text-3xl font-bold text-center mb-10">Quality Services</h1>
+  <section class="mx-auto mb-20 max-w-screen-xl rounded-[20px]">
+    <div id="service" class="">
+      <section class="bg-gray-50 rounded-[20px]">
+        <div class="mx-auto p-10">
+          <h2 class="text-base text-center font-light tracking-wide mb-7">Services</h2>
+          <h1 class="text-5xl text-[var(--heading-color)] font-medium text-center mb-10">Quality Services</h1>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Card 1 -->
             <div
-              class="bg-white shadow-md rounded-lg p-6 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-              <div class="flex justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M4 16c0-2.45 1.636-4 4-4h8c2.364 0 4 1.55 4 4M12 4a4 4 0 110 8 4 4 0 010-8zM4 16v4m16-4v4m-8 0h.01" />
+              class="rounded-lg py-[60px] px-10 border hover:border-[--primary-color] border-[var(--border-color:)] transition duration-300">
+              <div class="flex justify-start mb-4 text-[#448C74]">
+                <svg class="w-[60px] h-[60px]" viewBox="0 0 24 24" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.04932 12.9999H7.52725C7.70624 16.2688 8.7574 19.3053 10.452 21.8809C5.98761 21.1871 2.5001 17.5402 2.04932 12.9999ZM2.04932 10.9999C2.5001 6.45968 5.98761 2.81276 10.452 2.11902C8.7574 4.69456 7.70624 7.73111 7.52725 10.9999H2.04932ZM21.9506 10.9999H16.4726C16.2936 7.73111 15.2425 4.69456 13.5479 2.11902C18.0123 2.81276 21.4998 6.45968 21.9506 10.9999ZM21.9506 12.9999C21.4998 17.5402 18.0123 21.1871 13.5479 21.8809C15.2425 19.3053 16.2936 16.2688 16.4726 12.9999H21.9506ZM9.53068 12.9999H14.4692C14.2976 15.7828 13.4146 18.3732 11.9999 20.5915C10.5852 18.3732 9.70229 15.7828 9.53068 12.9999ZM9.53068 10.9999C9.70229 8.21709 10.5852 5.62672 11.9999 3.40841C13.4146 5.62672 14.2976 8.21709 14.4692 10.9999H9.53068Z">
+                  </path>
                 </svg>
               </div>
-              <h3 class="text-lg font-semibold mb-2">Brand Identity Design</h3>
-              <p class="text-sm text-gray-600">Dorbesh gives you the blocks & kits you need to create a true website
+              <h3 class="text-[20px] my-5 text-[var(--subtitle-color)]">Brand Identity Design</h3>
+              <p class="text-[#444] font-normal">Dorbesh gives you the blocks & kits you need to create a true
+                website
                 within minutes.</p>
             </div>
             <!-- Card 2 -->
             <div
-              class="bg-white shadow-md rounded-lg p-6 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-              <div class="flex justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h11M9 21V3m11 7l-4-4m0 8l4-4" />
+              class="rounded-lg py-[60px] px-10 border hover:border-[--primary-color] border-[var(--border-color:)] transition duration-300">
+              <div class="flex justify-start mb-4 text-[#448C74]">
+                <svg class="w-[60px] h-[60px]" viewBox="0 0 24 24" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.93912 14.0328C6.7072 14.6563 6.51032 15.2331 6.33421 15.8155C7.29345 15.1189 8.43544 14.6767 9.75193 14.5121C12.2652 14.198 14.4976 12.5385 15.6279 10.4537L14.1721 8.99888L15.5848 7.58417C15.9185 7.25004 16.2521 6.91614 16.5858 6.58248C17.0151 6.15312 17.5 5.35849 18.0129 4.2149C12.4197 5.08182 8.99484 8.50647 6.93912 14.0328ZM17 8.99739L18 9.99669C17 12.9967 14 15.9967 10 16.4967C7.33146 16.8303 5.66421 18.6636 4.99824 21.9967H3C4 15.9967 6 1.99669 21 1.99669C20.0009 4.99402 19.0018 6.99313 18.0027 7.99402C17.6662 8.33049 17.3331 8.66382 17 8.99739Z">
+                  </path>
                 </svg>
+
               </div>
-              <h3 class="text-lg font-semibold mb-2">Website Design</h3>
-              <p class="text-sm text-gray-600">Dorbesh gives you the blocks & kits you need to create a true website
+              <h3 class="text-[20px] my-5 text-[var(--subtitle-color)]">Brand Identity Design</h3>
+              <p class="text-[#444] font-normal">Dorbesh gives you the blocks & kits you need to create a true
+                website
                 within minutes.</p>
             </div>
             <!-- Card 3 -->
             <div
-              class="bg-white shadow-md rounded-lg p-8 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-              <div class="flex justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 3.13a1 1 0 011.59-.81l2.1 1.25A1 1 0 0120 5v13a1 1 0 01-.5.87l-8 4.8a1 1 0 01-1 0l-8-4.8A1 1 0 012 18V5a1 1 0 01.31-.72L4.41 3.13A1 1 0 015.59 3.13L12 6.7l6.41-3.57z" />
+              class="rounded-lg py-[60px] px-10 border hover:border-[--primary-color] border-[var(--border-color:)] transition duration-300">
+              <div class="flex justify-start mb-4 text-[#448C74]">
+                <svg class="w-[60px] h-[60px]" viewBox="0 0 24 24" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.00021 18.9223L2.65056 18.377C2.13849 18.1701 1.89109 17.5873 2.09798 17.0752L4.00021 12.3671V18.9223ZM8.85987 21H7.00021C6.44792 21 6.00021 20.5523 6.00021 20V13.9221L8.85987 21ZM6.02202 5.96771L15.2939 2.22164C15.8059 2.01475 16.3888 2.26215 16.5956 2.77422L22.2147 16.682C22.4216 17.194 22.1742 17.7769 21.6622 17.9838L12.3903 21.7298C11.8783 21.9367 11.2954 21.6893 11.0885 21.1773L5.46944 7.2695C5.26255 6.75743 5.50995 6.1746 6.02202 5.96771ZM9.00021 9.00004C9.55249 9.00004 10.0002 8.55233 10.0002 8.00004C10.0002 7.44776 9.55249 7.00004 9.00021 7.00004C8.44792 7.00004 8.00021 7.44776 8.00021 8.00004C8.00021 8.55233 8.44792 9.00004 9.00021 9.00004Z">
+                  </path>
                 </svg>
               </div>
-              <h3 class="text-lg font-semibold mb-2">Application Design</h3>
-              <p class="text-sm text-gray-600">Dorbesh gives you the blocks & kits you need to create a true website
+              <h3 class="text-[20px] my-5 text-[var(--subtitle-color)]">Brand Identity Design</h3>
+              <p class="text-[#444] font-normal">Dorbesh gives you the blocks & kits you need to create a true
+                website
                 within minutes.</p>
             </div>
           </div>
@@ -234,91 +243,125 @@
   <!-- service section end -->
 
   <!-- Experience & Education section start -->
-  <section class="text-center m-12">
-
-    <div class="bg-gray-100 p-6">
-      <div class="max-w-7xl mx-auto">
-        <!-- Experience Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 lg:space-x-5 bg-white shadow-md rounded-md">
-          <div>
-            <h2 class="text-2xl font-bold mb-4">Experience</h2>
-            <div class="space-y-4 text-gray-600">
-              <!-- Single Experience -->
-              <div class="flex items-center p-4 ">
-                <div class="flex-shrink-0 w-12 h-12  flex items-center justify-center rounded-full">
-                  <i class="fas fa-laptop-code text-xl text-gray-600"></i>
+  <section id="resume" class="resume-area py-4">
+    <div class="container mx-auto mb-20 max-w-screen-xl rounded-[20px]">
+      <div class="resume-items">
+        <div class="row justify-around">
+          <!-- START EXPERIENCE RESUME DESIGN AREA -->
+          <div class="w-full md:w-full xl:w-1/2">
+            <div class="single-resume rounded-lg">
+              <h2 class="text-2xl text-[var(--heading-color)] mb-2">Experience</h2>
+              <div class="experience-list rounded-[10px]">
+                <!-- START SINGLE RESUME DESIGN AREA -->
+                <div class="resume-item wow fadeInUp delay-0-3s">
+                  <div class="icon flex items-center justify-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM5 15.3368C5.45463 15.1208 5.9632 15 6.5 15H19V4H6C5.44772 4 5 4.44772 5 5V15.3368Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <span class="years">2021 - Present</span>
+                    <h4>Themeforest Market</h4>
+                    <span class="company"> Web Designer </span>
+                  </div>
                 </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold">Themeforest Market</h3>
-                  <p class="text-sm text-gray-600">Web Designer</p>
-                  <p class="text-sm text-gray-500">2021 - Present</p>
+                <!-- / END SINGLE RESUME DESIGN AREA -->
+                <!-- START SINGLE RESUME DESIGN AREA -->
+                <div class="resume-item wow fadeInUp delay-0-3s">
+                  <div class="icon flex items-center justify-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM5 15.3368C5.45463 15.1208 5.9632 15 6.5 15H19V4H6C5.44772 4 5 4.44772 5 5V15.3368Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <span class="years">2021 - 2023</span>
+                    <h4>Envato Theme Developer</h4>
+                    <span class="company">Web Development</span>
+                  </div>
                 </div>
-              </div>
-
-              <div class="flex items-center p-4 ">
-                <div class="flex-shrink-0 w-12 h-12  flex items-center justify-center rounded-full">
-                  <i class="fas fa-code text-xl text-gray-600"></i>
+                <!-- / END SINGLE RESUME DESIGN AREA -->
+                <!-- START SINGLE RESUME DESIGN AREA -->
+                <div class="resume-item wow fadeInUp delay-0-3s">
+                  <div class="icon flex items-center justify-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM5 15.3368C5.45463 15.1208 5.9632 15 6.5 15H19V4H6C5.44772 4 5 4.44772 5 5V15.3368Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <span class="years">2021 - 2022</span>
+                    <h4> Marketing Expert GRP</h4>
+                    <span class="company">Web Developer &amp; Business Partner</span>
+                  </div>
                 </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold">Envato Theme Developer</h3>
-                  <p class="text-sm text-gray-600">Web Development</p>
-                  <p class="text-sm text-gray-500">2021 - 2023</p>
-                </div>
-              </div>
-
-              <div class="flex items-center p-4 ">
-                <div class="flex-shrink-0 w-12 h-12  flex items-center justify-center rounded-full">
-                  <i class="fas fa-briefcase text-xl text-gray-600"></i>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold">Marketing Expert GRP</h3>
-                  <p class="text-sm text-gray-600">Web Developer & Business Partner</p>
-                  <p class="text-sm text-gray-500">2021 - 2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education Section -->
-          <div>
-            <h2 class="text-2xl font-bold mb-4">Education</h2>
-            <div class="space-y-4 bg-white shadow-md rounded-md text-gray-600">
-              <!-- Single Education -->
-              <div class="flex items-center p-4 ">
-                <div class="flex-shrink-0 w-12 h-12  flex items-center justify-center rounded-full">
-                  <i class="fas fa-graduation-cap text-xl text-gray-600"></i>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold">Bachelor Degree of Information Technology</h3>
-                  <p class="text-sm text-gray-600">State University Bangladesh</p>
-                  <p class="text-sm text-gray-500">2013 - 2015</p>
-                </div>
-              </div>
-
-              <div class="flex items-center p-4 ">
-                <div class="flex-shrink-0 w-12 h-12  flex items-center justify-center rounded-full">
-                  <i class="fas fa-school text-xl text-gray-600"></i>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold">Higher Secondary Education</h3>
-                  <p class="text-sm text-gray-600">Premium College United VC</p>
-                  <p class="text-sm text-gray-500">2021 - 2024</p>
-                </div>
-              </div>
-
-              <div class="flex items-center p-4 ">
-                <div class="flex-shrink-0 w-12 h-12  flex items-center justify-center rounded-full">
-                  <i class="fas fa-paint-brush text-xl text-gray-600"></i>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold">Webster College</h3>
-                  <p class="text-sm text-gray-600">UI/UX Design</p>
-                  <p class="text-sm text-gray-500">2021 - 2024</p>
-                </div>
+                <!-- / END SINGLE RESUME DESIGN AREA -->
               </div>
             </div>
           </div>
-
+          <!-- // END EXPERIENCE RESUME DESIGN AREA -->
+          <!-- START EDUCATION RESUME DESIGN AREA -->
+          <div class="col-xl-6 col-md-12">
+            <div class="experience-list rounded-md">
+              <div class="single-resume">
+                <h2 class="text-2xl text-[var(--heading-color)] mb-2">Education</h2>
+                <!-- START SINGLE RESUME DESIGN AREA -->
+                <div class="resume-item wow fadeInUp delay-0-3s">
+                  <div class="icon flex items-center justify-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM5 15.3368C5.45463 15.1208 5.9632 15 6.5 15H19V4H6C5.44772 4 5 4.44772 5 5V15.3368Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <span class="years">2013 - 2015</span>
+                    <h4>Bachelor Degree of Information Technology</h4>
+                    <span class="company">State University bangladesh
+                    </span>
+                  </div>
+                </div>
+                <!-- / END SINGLE RESUME DESIGN AREA -->
+                <!-- START SINGLE RESUME DESIGN AREA -->
+                <div class="resume-item wow fadeInUp delay-0-3s">
+                  <div class="icon flex items-center justify-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM5 15.3368C5.45463 15.1208 5.9632 15 6.5 15H19V4H6C5.44772 4 5 4.44772 5 5V15.3368Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <span class="years">2021 - 2024</span>
+                    <h4>Higher secoundery Education </h4>
+                    <span class="company">Premium College United VC</span>
+                  </div>
+                </div>
+                <!-- / END SINGLE RESUME DESIGN AREA -->
+                <!-- START SINGLE RESUME DESIGN AREA -->
+                <div class="resume-item wow fadeInUp delay-0-3s">
+                  <div class="icon flex items-center justify-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM5 15.3368C5.45463 15.1208 5.9632 15 6.5 15H19V4H6C5.44772 4 5 4.44772 5 5V15.3368Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <span class="years">2021 - 2024</span>
+                    <h4>Webster College</h4>
+                    <span class="company"> UI/UX Design </span>
+                  </div>
+                </div>
+                <!-- / END SINGLE RESUME DESIGN AREA -->
+              </div>
+            </div>
+          </div>
+          <!-- // END EDUCATION RESUME DESIGN AREA -->
         </div>
       </div>
     </div>
@@ -328,95 +371,104 @@
 
 
   <!-- My Skills section Start -->
-  <section>
-
-    <div class="bg-gray-50 mb-10">
-      <div class="max-w-screen-lg mx-auto py-10">
-        <h1 class="text-xl text-red-400 text-center mb-10">Pro Skills</h1>
-        <h1 class="text-4xl font-semi-bold text-center mb-10">Let's Explore My Skills</h1>
+  <section id="skills">
+    <div class="mb-10 container mx-auto max-w-screen-xl rounded-[20px]">
+      <div class="mx-auto py-[15px]">
+        <h1 class="text-center mb-10">Pro Skills</h1>
+        <h1 class="text-5xl text-center mb-10 text-[var(--heading-color)]">Let's Explore My Skills</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Card 1 -->
           <div
-            class="bg-white shadow-md rounded-lg p-5 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-            <i class="fab fa-figma text-4xl text-indigo-500 mb-3"></i>
-            <h2 class="text-lg font-semibold mb-2">Figma</h2>
+            class="group rounded-lg border hover:border-[var(--primary-color)] border-[var(--border-color)] transition duration-300 p-6  ">
+            <img class="justify-self-center" src="./assets/images/skill1.png" alt="Figma">
+            <h2 class="text-base mt-[15px] mb-4 justify-self-center">Figma</h2>
             <div
-              class="bg-red-900 rounded-full h-8 hover:bg-black flex items-center justify-center text-white font-semibold">
+              class="bg-[var(--primary-color)] p-[10px] text-xl rounded-[10px] flex items-center justify-center text-white font-semibold transition duration-300 group-hover:bg-black">
               99%
             </div>
           </div>
 
-
           <!-- Card 2 -->
           <div
-            class="bg-white shadow-md rounded-lg p-5 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-            <i class="fab fa-css3-alt text-4xl text-blue-500 mb-3"></i>
-            <h2 class="text-lg font-semibold mb-2">Tailwind</h2>
+            class="group rounded-lg border hover:border-[var(--primary-color)] border-[var(--border-color)] transition duration-300 p-6  ">
+            <img class="justify-self-center" src="./assets/images/skill2.png" alt="Tailwand">
+            <h2 class="text-base mt-[15px] mb-4 justify-self-center">Tailwand</h2>
             <div
-              class="bg-red-900 rounded-full h-8 hover:bg-black flex items-center justify-center text-white font-semibold">
+              class="bg-[var(--primary-color)] p-[10px] text-xl rounded-[10px] flex items-center justify-center text-white font-semibold transition duration-300 group-hover:bg-black">
               93%
             </div>
           </div>
+
           <!-- Card 3 -->
           <div
-            class="bg-white shadow-md rounded-lg p-5 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-            <i class="fas fa-pencil-ruler text-4xl text-gray-700 mb-3"></i>
-            <h2 class="text-lg font-semibold mb-2">Photoshop</h2>
+            class="group rounded-lg border hover:border-[var(--primary-color)] border-[var(--border-color)] transition duration-300 p-6  ">
+            <img class="justify-self-center" src="./assets/images/skill3.png" alt="Photoshop">
+            <h2 class="text-base mt-[15px] mb-4 justify-self-center">Photoshop</h2>
             <div
-              class="bg-red-900 rounded-full h-8 hover:bg-black flex items-center justify-center text-white font-semibold">
+              class="bg-[var(--primary-color)] p-[10px] text-xl rounded-[10px] flex items-center justify-center text-white font-semibold transition duration-300 group-hover:bg-black">
               53%
             </div>
           </div>
+
           <!-- Card 4 -->
           <div
-            class="bg-white shadow-md rounded-lg p-5 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-            <i class="fab fa-wordpress text-4xl text-blue-600 mb-3"></i>
-            <h2 class="text-lg font-semibold mb-2">WordPress</h2>
+            class="group rounded-lg border hover:border-[var(--primary-color)] border-[var(--border-color)] transition duration-300 p-6  ">
+            <img class="justify-self-center" src="./assets/images/skill4.png" alt="WordPress">
+            <h2 class="text-base mt-[15px] mb-4 justify-self-center">WordPress</h2>
             <div
-              class="bg-red-900 rounded-full h-8 hover:bg-blackflex items-center justify-center text-white font-semibold">
+              class="bg-[var(--primary-color)] p-[10px] text-xl rounded-[10px] flex items-center justify-center text-white font-semibold transition duration-300 group-hover:bg-black">
               74%
             </div>
           </div>
+
           <!-- Card 5 -->
           <div
-            class="bg-white shadow-md rounded-lg p-5 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-            <i class="fab fa-angular text-4xl text-red-600 mb-3"></i>
-            <h2 class="text-lg font-semibold mb-2">Angular</h2>
+            class="group rounded-lg border hover:border-[var(--primary-color)] border-[var(--border-color)] transition duration-300 p-6  ">
+            <img class="justify-self-center" src="./assets/images/skill5.png" alt="Angular">
+            <h2 class="text-base mt-[15px] mb-4 justify-self-center">Angular</h2>
             <div
-              class="bg-red-900 rounded-full h-8 hover:bg-black flex items-center justify-center text-white font-semibold">
+              class="bg-[var(--primary-color)] p-[10px] text-xl rounded-[10px] flex items-center justify-center text-white font-semibold transition duration-300 group-hover:bg-black">
               95%
             </div>
           </div>
+
+
           <!-- Card 6 -->
           <div
-            class="bg-white shadow-md rounded-lg p-5 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-            <i class="fab fa-webflow text-4xl text-blue-500 mb-3"></i>
-            <h2 class="text-lg font-semibold mb-2">Webflow</h2>
+            class="group rounded-lg border hover:border-[var(--primary-color)] border-[var(--border-color)] transition duration-300 p-6  ">
+            <img class="justify-self-center" src="./assets/images/skill6.png" alt="Webflow">
+            <h2 class="text-base mt-[15px] mb-4 justify-self-center">Webflow</h2>
             <div
-              class="bg-red-900 rounded-full h-8 hover:bg-black flex items-center justify-center text-white font-semibold">
+              class="bg-[var(--primary-color)] p-[10px] text-xl rounded-[10px] flex items-center justify-center text-white font-semibold transition duration-300 group-hover:bg-black">
               96%
             </div>
           </div>
+
+
           <!-- Card 7 -->
           <div
-            class="bg-white shadow-md rounded-lg p-5 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-            <i class="fab fa-python text-4xl text-yellow-500 mb-3"></i>
-            <h2 class="text-lg font-semibold mb-2">Python</h2>
+            class="group rounded-lg border hover:border-[var(--primary-color)] border-[var(--border-color)] transition duration-300 p-6  ">
+            <img class="justify-self-center" src="./assets/images/skill7.png" alt="Python">
+            <h2 class="text-base mt-[15px] mb-4 justify-self-center">Python</h2>
             <div
-              class="bg-red-900 rounded-full h-8 hover:bg-blackflex items-center justify-center text-white font-semibold">
+              class="bg-[var(--primary-color)] p-[10px] text-xl rounded-[10px] flex items-center justify-center text-white font-semibold transition duration-300 group-hover:bg-black">
               52%
             </div>
           </div>
+
+
           <!-- Card 8 -->
           <div
-            class="bg-white shadow-md rounded-lg p-5 text-center border border-transparent hover:border-black hover:border-1 transition duration-300">
-            <i class="fas fa-paint-brush text-4xl text-orange-500 mb-3"></i>
-            <h2 class="text-lg font-semibold mb-2">Sketch</h2>
+            class="group rounded-lg border hover:border-[var(--primary-color)] border-[var(--border-color)] transition duration-300 p-6  ">
+            <img class="justify-self-center" src="./assets/images/skill8.png" alt="Sketch">
+            <h2 class="text-base mt-[15px] mb-4 justify-self-center">Sketch</h2>
             <div
-              class="bg-red-900 rounded-full h-8 hover:bg-black flex items-center justify-center text-white font-semibold">
+              class="bg-[var(--primary-color)] p-[10px] text-xl rounded-[10px] flex items-center justify-center text-white font-semibold transition duration-300 group-hover:bg-black">
               84%
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
@@ -424,21 +476,30 @@
   <!-- My Skills section End -->
 
   <!-- Works & Projects -->
-  <section class="mb-5">
+  <section id="works" class=" bg-gray-50 mb-10 container mx-auto max-w-screen-xl rounded-[20px] p-10">
     <div class="bg-gray-50 rounded-lg">
       <div class="text-center py-10">
         <h1 class="poppins-font text-5xl text-[#000000] mb-4">Works & Projects</h1>
-        <p class="poppins-font text-base text-[#444444] mb-4 px-10 lg:px-96">Check out some of my design projects, meticulously crafted with love and dedication, each one reflecting the
+        <p class="poppins-font text-base text-[#444444] mb-4 px-10 lg:px-96">Check out some of my design projects,
+          meticulously crafted with love and dedication, each one reflecting the
           passion and soul I poured into every detail.</p>
       </div>
       <div>
         <!-- Tags -->
         <div>
           <ul class="flex gap-5 poppins-font px-5 text-sm">
-            <p onclick="displayProjects('showAll')" id="showAll" class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">Show All</p>
-            <p onclick="displayProjects('webApp')" id="webApp" class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">Web Application</p>
-            <p onclick="displayProjects('educationalInitiative')" id="educationalInitiative" class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">Educational Initiative</p>
-            <p onclick="displayProjects('renewableEnergyProjects')" id="renewableEnergyProjects" class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">Renewable Energy Projects</p>
+            <p onclick="displayProjects('showAll')" id="showAll"
+              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">
+              Show All</p>
+            <p onclick="displayProjects('webApp')" id="webApp"
+              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">Web
+              Application</p>
+            <p onclick="displayProjects('educationalInitiative')" id="educationalInitiative"
+              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">
+              Educational Initiative</p>
+            <p onclick="displayProjects('renewableEnergyProjects')" id="renewableEnergyProjects"
+              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">
+              Renewable Energy Projects</p>
           </ul>
         </div>
 
@@ -452,18 +513,18 @@
   <!-- Works & Projects End -->
 
   <!-- Flexible Pricing plan section -->
-  <section>
-    <div class="bg-gray-50 py-10 rounded-lg">
+  <section id="price">
+    <div class="bg-gray-50 mb-10 container mx-auto max-w-screen-xl rounded-[20px] p-10">
       <div class="text-center">
         <p class="poppins-font text-base text-[#444444] mb-4">Pricing</p>
         <h1 class="text-[#000000] text-5xl poppins-font mb-4">Flexible Pricing Plan</h1>
       </div>
 
       <!-- Pricing Item -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-10 mt-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
         <!-- Basic -->
-        <div class="border border-[#77777D33] p-5 rounded-md">
-          <div class="border border-[#77777D33] px-4 py-2 rounded-md shadow-md ">
+        <div class="border border-[#77777D33] p-3 rounded-md">
+          <div class="border border-[#77777D33] px-4 py-2 rounded-md">
             <h3 class="poppins-font text-xl text-[#000000] my-3">Basic</h3>
             <p class="poppins-font text-lg text-[#444444] mb-5">Have design ready to build? <br /> or small budget</p>
             <p class=""><span class="text-[#448C74] font-poppins text-4xl">$15</span><span
@@ -476,14 +537,19 @@
             <p class="mb-2 opacity-35">-> Digital Marketing</p>
             <p class="mb-5 opacity-35">-> Custome Support</p>
             <button
-              class="poppins-font bg-[#448C74] text-[#FFFFFF] py-3 px-6 text-sm font-medium rounded-s-xl rounded-e-xl hover:bg-[#000000] duration-300 transition-all">Order
-              Now <i class="fa-solid fa-basket-shopping"></i></button>
+              class="poppins-font bg-[#448C74] text-[#FFFFFF] py-3 px-6 text-sm font-medium rounded-s-xl rounded-e-xl hover:bg-[#000000] duration-300 transition-all flex flex-row justify-center">Order
+              Now <svg class="w-5 h-5 pl-1 justify-self-center" viewBox="0 0 24 24" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.0049 2C15.3186 2 18.0049 4.68629 18.0049 8V9H22.0049V11H20.8379L20.0813 20.083C20.0381 20.6013 19.6048 21 19.0847 21H4.92502C4.40493 21 3.97166 20.6013 3.92847 20.083L3.17088 11H2.00488V9H6.00488V8C6.00488 4.68629 8.69117 2 12.0049 2ZM18.8309 11H5.17788L5.84488 19H18.1639L18.8309 11ZM13.0049 13V17H11.0049V13H13.0049ZM9.00488 13V17H7.00488V13H9.00488ZM17.0049 13V17H15.0049V13H17.0049ZM12.0049 4C9.86269 4 8.1138 5.68397 8.00978 7.80036L8.00488 8V9H16.0049V8C16.0049 5.8578 14.3209 4.10892 12.2045 4.0049L12.0049 4Z">
+                </path>
+              </svg></button>
           </div>
 
         </div>
         <!-- Standard -->
-        <div class="border border-[#77777D33] p-5 rounded-md">
-          <div class="border border-[#77777D33] px-4 py-2 rounded-md shadow-md ">
+        <div class="border border-[#77777D33] p-3 rounded-md">
+          <div class="border border-[#77777D33] px-4 py-2 rounded-md">
             <h3 class="poppins-font text-xl text-[#000000] my-3">Standard</h3>
             <p class="poppins-font text-lg text-[#444444] mb-5">Not have any design? <br /> Leave its for me</p>
             <p class=""><span class="text-[#448C74] font-poppins text-4xl">$59</span><span
@@ -496,14 +562,19 @@
             <p class="mb-2">-> Digital Marketing</p>
             <p class="mb-5 opacity-35">-> Custom Support</p>
             <button
-              class="poppins-font bg-[#448C74] text-[#FFFFFF] py-3 px-6 text-sm font-medium rounded-s-xl rounded-e-xl hover:bg-[#000000] duration-300 transition-all">Order
-              Now <i class="fa-solid fa-basket-shopping"></i></button>
+              class="poppins-font bg-[#448C74] text-[#FFFFFF] py-3 px-6 text-sm font-medium rounded-s-xl rounded-e-xl hover:bg-[#000000] duration-300 transition-all flex flex-row justify-center">Order
+              Now <svg class="w-5 h-5 pl-1 justify-self-center" viewBox="0 0 24 24" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.0049 2C15.3186 2 18.0049 4.68629 18.0049 8V9H22.0049V11H20.8379L20.0813 20.083C20.0381 20.6013 19.6048 21 19.0847 21H4.92502C4.40493 21 3.97166 20.6013 3.92847 20.083L3.17088 11H2.00488V9H6.00488V8C6.00488 4.68629 8.69117 2 12.0049 2ZM18.8309 11H5.17788L5.84488 19H18.1639L18.8309 11ZM13.0049 13V17H11.0049V13H13.0049ZM9.00488 13V17H7.00488V13H9.00488ZM17.0049 13V17H15.0049V13H17.0049ZM12.0049 4C9.86269 4 8.1138 5.68397 8.00978 7.80036L8.00488 8V9H16.0049V8C16.0049 5.8578 14.3209 4.10892 12.2045 4.0049L12.0049 4Z">
+                </path>
+              </svg></button>
           </div>
         </div>
 
         <!-- Standard -->
-        <div class="border border-[#77777D33] p-5 rounded-md">
-          <div class="border border-[#77777D33] px-4 py-2 rounded-md shadow-md ">
+        <div class="border border-[#77777D33] p-3 rounded-md">
+          <div class="border border-[#77777D33] px-4 py-2 rounded-md">
             <h3 class="poppins-font text-xl text-[#000000] my-3">Standard</h3>
             <p class="poppins-font text-lg text-[#444444] mb-5">Not have any design? <br /> Leave its for me</p>
             <p class=""><span class="text-[#448C74] font-poppins text-4xl">$59</span><span
@@ -516,8 +587,13 @@
             <p class="mb-2">-> Digital Marketing</p>
             <p class="mb-5 opacity-35">-> Custom Support</p>
             <button
-              class="poppins-font bg-[#448C74] text-[#FFFFFF] py-3 px-6 text-sm font-medium rounded-s-xl rounded-e-xl hover:bg-[#000000] duration-300 transition-all">Order
-              Now <i class="fa-solid fa-basket-shopping"></i></button>
+              class="poppins-font bg-[#448C74] text-[#FFFFFF] py-3 px-6 text-sm font-medium rounded-s-xl rounded-e-xl hover:bg-[#000000] duration-300 transition-all flex flex-row justify-center">Order
+              Now <svg class="w-5 h-5 pl-1 justify-self-center" viewBox="0 0 24 24" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.0049 2C15.3186 2 18.0049 4.68629 18.0049 8V9H22.0049V11H20.8379L20.0813 20.083C20.0381 20.6013 19.6048 21 19.0847 21H4.92502C4.40493 21 3.97166 20.6013 3.92847 20.083L3.17088 11H2.00488V9H6.00488V8C6.00488 4.68629 8.69117 2 12.0049 2ZM18.8309 11H5.17788L5.84488 19H18.1639L18.8309 11ZM13.0049 13V17H11.0049V13H13.0049ZM9.00488 13V17H7.00488V13H9.00488ZM17.0049 13V17H15.0049V13H17.0049ZM12.0049 4C9.86269 4 8.1138 5.68397 8.00978 7.80036L8.00488 8V9H16.0049V8C16.0049 5.8578 14.3209 4.10892 12.2045 4.0049L12.0049 4Z">
+                </path>
+              </svg></button>
           </div>
         </div>
       </div>
@@ -525,8 +601,21 @@
   </section>
   <!-- Flexible Pricing plan section End -->
 
+
+  <!-- Testmonial Section Start -->
+  <section id="testmonial" class="bg-gray-50 mb-10 container mx-auto max-w-screen-xl rounded-[20px] p-10">
+    <div class="items-center">
+      <p class="font-light">Testimonials</p>
+      <h2 class="text-5xl">What clients say!</h2>
+    </div>
+  </section>
+  <!-- Testmonial Section End -->
+
   <!-- Link to the JavaScript file -->
   <script src="./assets/js/script.js"></script>
+
+  <!-- Link to the Swiper CDN -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </body>
 

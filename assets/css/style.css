@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-color: #444;
   --heading-color: #000;
@@ -29,10 +33,10 @@
 }
 
 body {
-  color: var(--textColor);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 30px;
   font-size: 16px;
+  color: var(--main-color);
 }
 
 /* Loader styles */
@@ -197,4 +201,76 @@ p {
   to {
     transform: rotate(360deg);
   }
+}
+
+.row {
+  --bs-gutter-x: 30px;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.single-resume {
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
+    rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
+  background-color: #fff;
+}
+
+.experience-list {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.resume-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(119, 119, 125, 0.2);
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.resume-item .icon {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #f9f9f9;
+  line-height: 50px;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.resume-item .content .years {
+  line-height: 1;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.resume-item .content h4 {
+  margin: 12px 0px;
+  color: var(--subtitle-color);
+  font-size: 20px;
+}
+
+.resume-item .content .company {
+  font-weight: 400;
+  color: var(--main-color);
+  font-size: 16px;
 }
