@@ -21,7 +21,8 @@
   <!-- bootstrap CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-  <!-- Swiper CDN -->
+  <!-- Swiper Styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-[#ECF3F1] poppins-font lg:pt-28 pt-24 px-2">
@@ -604,9 +605,86 @@
 
   <!-- Testmonial Section Start -->
   <section id="testmonial" class="bg-gray-50 mb-10 container mx-auto max-w-screen-xl rounded-[20px] p-10">
-    <div class="items-center">
-      <p class="font-light">Testimonials</p>
-      <h2 class="text-5xl">What clients say!</h2>
+    <div class="text-center py-10">
+      <p class="font-light text-base mb-4">Testimonials</p>
+      <h2 class="text-5xl mb-4">What clients say!</h2>
+    </div>
+
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="border border-1 rounded-xl p-5 hover:border-[var(--primary-color)] transition duration-300">
+            <img class="rounded-full h-[60px] w-[60px] mb-6" src="./assets/images/author1.jpg" alt="Zonathon Doe">
+            <p class="mb-7 text-base font-normal">
+              Financial planners help people to knowledge in about how to invest and save their money in the most
+              efficient way.
+            </p>
+            <h2 class="text-xl">Zonathon Doe</h2>
+            <p class="text-[14px] font-normal">CEO & Founder X</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="border border-1 rounded-xl p-5 hover:border-[var(--primary-color)] transition duration-300">
+            <img class="rounded-full h-[60px] w-[60px] mb-6" src="./assets/images/author2.jpg" alt="Liana Marie">
+            <p class="mb-7 text-base font-normal">
+              Financial planners help people to knowledge in about how to invest and save their money in the most
+              efficient way.
+            </p>
+            <h2 class="text-xl">Liana Marie</h2>
+            <p class="text-[14px] font-normal">Lead Designer Meta</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="border border-1 rounded-xl p-5 hover:border-[var(--primary-color)] transition duration-300">
+            <img class="rounded-full h-[60px] w-[60px] mb-6" src="./assets/images/author1.jpg" alt="Zonathon Doe">
+            <p class="mb-7 text-base font-normal">
+              Financial planners help people to knowledge in about how to invest and save their money in the most
+              efficient way.
+            </p>
+            <h2 class="text-xl">Zonathon Doe</h2>
+            <p class="text-[14px] font-normal">CEO & Founder X</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="border border-1 rounded-xl p-5 hover:border-[var(--primary-color)] transition duration-300">
+            <img class="rounded-full h-[60px] w-[60px] mb-6" src="./assets/images/author2.jpg" alt="Liana Marie">
+            <p class="mb-7 text-base font-normal">
+              Financial planners help people to knowledge in about how to invest and save their money in the most
+              efficient way.
+            </p>
+            <h2 class="text-xl">Liana Marie</h2>
+            <p class="text-[14px] font-normal">Lead Designer Meta</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="wow fadeInUp delay-0-6s text-center pt-10">
+      <button class="button-prev slick-arrow bg-[var(--primary-color)] rounded-full p-3 text-white">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+          </path>
+        </svg>
+      </button>
+
+      <button class="button-next slick-arrow bg-[var(--primary-color)] rounded-full p-3 text-white">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+          </path>
+        </svg>
+      </button>
     </div>
   </section>
   <!-- Testmonial Section End -->
@@ -614,8 +692,12 @@
   <!-- Link to the JavaScript file -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- Link to the Swiper CDN -->
+  <!-- Swiper Script -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+
+  </script>
 
 </body>
 

@@ -54,28 +54,28 @@ const projectItem = document.getElementById("projectItem");
 const div = document.createElement('div');
 const displayProjects = (category) => {
     // console.log(category);
-    if(category==='showAll'){
+    if (category === 'showAll') {
         projectItem.innerHTML = `
             <div>
                 <p>Show All</p>
             </div>
         `;
     }
-    else if(category==='webApp'){
+    else if (category === 'webApp') {
         projectItem.innerHTML = `
             <div>
                 <p>Web Application</p>
             </div>
         `;
     }
-    else if(category==='educationalInitiative'){
+    else if (category === 'educationalInitiative') {
         projectItem.innerHTML = `
             <div>
                 <p>Educational Initiative</p>
             </div>
         `;
     }
-    else if(category==='renewableEnergyProjects'){
+    else if (category === 'renewableEnergyProjects') {
         projectItem.innerHTML = `
             <div>
                 <p>Renewable Energy Projects</p>
@@ -83,3 +83,34 @@ const displayProjects = (category) => {
         `;
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
+        },
+        spaceBetween: 20,
+        slidesPerView: 1,
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+        },
+    });
+});
