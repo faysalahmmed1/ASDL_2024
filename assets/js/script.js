@@ -48,3 +48,6 @@ document.querySelectorAll('.scroller').forEach((scroller) => {
     inner.style.animationDuration = speed;
     inner.style.animationDirection = direction === 'left' ? 'normal' : 'reverse';
 });
+
+
+const projectItem = document.getElementById("projectItem");
