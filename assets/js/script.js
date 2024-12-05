@@ -84,27 +84,86 @@ const displayProjects = (category) => {
 
                     </div>
                 </div>
+                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/Medicaluxe.webp" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Medicaluxe</p>
+                        <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Focused on SPAs and medical clinics.</h3>
+
+                    </div>
+                </div>
+                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/Webinar.jpeg" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Knowledge Sharing / Webinar</p>
+                        <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Educational and industry insights. Ecotourism and sustainable luxury in a post-pandemic world.</h3>
+
+                    </div>
+                </div>
             </div>
         `;
     }
     else if (category === 'webApp') {
         projectItem.innerHTML = `
-            <div>
-                <p>Web Application</p>
+            <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
+                 <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/Young_Talent_Social_Project.png" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Web Application</p>
+                        <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Social project promoting young talent through technological and educational platforms.</h3>
+
+                    </div>
+                </div>
+                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/Medicaluxe.webp" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Medicaluxe</p>
+                        <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Focused on SPAs and medical clinics.</h3>
+
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    else if (category === 'webinar') {
+        projectItem.innerHTML = `
+            <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
+                 <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/Webinar.jpeg" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Knowledge Sharing / Webinar</p>
+                        <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Educational and industry insights. Ecotourism and sustainable luxury in a post-pandemic world.</h3>
+
+                    </div>
+                </div>
             </div>
         `;
     }
     else if (category === 'educationalInitiative') {
         projectItem.innerHTML = `
-            <div>
-                <p>Educational Initiative</p>
+            <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
+                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/pilsa.jpeg" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Educational Initiative</p>
+                        <h3 class="text-lg text-[#444444] poppins-font my-2">Hospitality training and community development program.</h3>
+
+                    </div>
+                </div>
             </div>
         `;
     }
     else if (category === 'renewableEnergyProjects') {
         projectItem.innerHTML = `
-            <div>
-                <p>Renewable Energy Projects</p>
+            <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
+                 <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/exener.png" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Renewable Energy Projects</p>
+                        <h3 class="text-lg  text-[#444444] poppins-font my-2">Exener Group</h3>
+
+                    </div>
+                </div>
             </div>
         `;
     }
