@@ -52,12 +52,38 @@ document.querySelectorAll('.scroller').forEach((scroller) => {
 
 const projectItem = document.getElementById("projectItem");
 const div = document.createElement('div');
+document.addEventListener('DOMContentLoaded',()=>{
+    document.getElementById('showAll').click();
+})
 const displayProjects = (category) => {
     // console.log(category);
     if (category === 'showAll') {
         projectItem.innerHTML = `
-            <div>
-                <p>Show All</p>
+            <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
+                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/exener.png" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Renewable Energy Projects</p>
+                        <h3 class="text-lg  text-[#444444] poppins-font my-2">Exener Group</h3>
+
+                    </div>
+                </div>
+                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/pilsa.jpeg" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Educational Initiative</p>
+                        <h3 class="text-lg text-[#444444] poppins-font my-2">Hospitality training and community development program.</h3>
+
+                    </div>
+                </div>
+                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
+                    <img src="/assets/images/Young_Talent_Social_Project.png" class="w-80 h-52"/>
+                    <div class="pl-5 pb-5">
+                        <p class="poppins-font text-base text-[#444444] mt-2">Web Application</p>
+                        <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Social project promoting young talent through technological and educational platforms.</h3>
+
+                    </div>
+                </div>
             </div>
         `;
     }
