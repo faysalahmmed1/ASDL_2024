@@ -168,3 +168,34 @@ const displayProjects = (category) => {
         `;
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
+        },
+        spaceBetween: 20,
+        slidesPerView: 1,
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+        },
+    });
+});
