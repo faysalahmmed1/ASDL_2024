@@ -51,3 +51,35 @@ document.querySelectorAll('.scroller').forEach((scroller) => {
 
 
 const projectItem = document.getElementById("projectItem");
+const div = document.createElement('div');
+const displayProjects = (category) => {
+    // console.log(category);
+    if(category==='showAll'){
+        projectItem.innerHTML = `
+            <div>
+                <p>Show All</p>
+            </div>
+        `;
+    }
+    else if(category==='webApp'){
+        projectItem.innerHTML = `
+            <div>
+                <p>Web Application</p>
+            </div>
+        `;
+    }
+    else if(category==='educationalInitiative'){
+        projectItem.innerHTML = `
+            <div>
+                <p>Educational Initiative</p>
+            </div>
+        `;
+    }
+    else if(category==='renewableEnergyProjects'){
+        projectItem.innerHTML = `
+            <div>
+                <p>Renewable Energy Projects</p>
+            </div>
+        `;
+    }
+}
