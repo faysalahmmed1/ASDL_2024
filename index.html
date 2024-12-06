@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-[#ECF3F1] poppins-font lg:pt-28 pt-24 px-2">
+<body class="bg-[#ECF3F1] poppins-font lg:pt-28 pt-24 px-2 my-auto">
 
   <!-- Loading Screen -->
   <div id="loading-screen" class="fixed inset-0 bg-black flex items-center justify-center z-50">
@@ -125,7 +125,8 @@
       <!-- About Section start -->
 
       <!-- About Card 1 -->
-      <div class="p-10 bg-white shadow border rounded-[20px] lg:col-span-2 about-content-part">
+      <div
+        class="p-10 bg-white shadow border rounded-[20px] lg:col-span-2 about-content-part leading-3 lg:leading-[52px]">
         <p class="text-base font-light mb-4">Hello There!</p>
         <h2 class="mb-5 lg:text-[42px] md:text-4xl text-xl">
           I’m <span>Hector De Castro</span>, a Web designer crafting <span>user-centric design</span> with
@@ -492,23 +493,24 @@
       <div>
         <!-- Tags -->
         <div>
-          <ul class="flex gap-5 poppins-font px-5 text-sm">
-            <p onclick="displayProjects('showAll')" id="showAll"
-              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">
+          <ul class="flex gap-5 flex-wrap poppins-font px-5 text-sm">
+            <p onclick="setActive('showAll'); displayProjects('showAll')" id="showAll"
+              class="relative cursor-pointer text-[#444444] duration-300 transition-all pb-1 border-b-green-500 border-b-2">
               Show All</p>
-            <p onclick="displayProjects('webApp')" id="webApp"
-              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">Web
-              Application</p>
-            <p onclick="displayProjects('webinar')" id="webinar"
-              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">
+            <p onclick="setActive('webApp'); displayProjects('webApp')" id="webApp"
+              class=" cursor-pointer text-[#444444] duration-300 transition-all">Web
+              Application <span class="absolute bottom-0 left-0 w-full h-[2px] bg-[#448C74] opacity-0"></span></p>
+            <p onclick="setActive('webinar'); displayProjects('webinar')" id="webinar"
+              class=" cursor-pointer text-[#444444] duration-300 transition-all">
               Webinar</p>
-            <p onclick="displayProjects('educationalInitiative')" id="educationalInitiative"
-              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">
+            <p onclick="setActive('educationalInitiative'); displayProjects('educationalInitiative')"
+              id="educationalInitiative" class=" cursor-pointer text-[#444444] duration-300 transition-all">
               Educational Initiative</p>
-            <p onclick="displayProjects('renewableEnergyProjects')" id="renewableEnergyProjects"
-              class="hover:underline cursor-pointer text-[#444444] hover:text-[#448C74] duration-300 transition-all">
+            <p onclick="setActive('renewableEnergyProjects'); displayProjects('renewableEnergyProjects')"
+              id="renewableEnergyProjects" class=" cursor-pointer text-[#444444] duration-300 transition-all">
               Renewable Energy Projects</p>
           </ul>
+
         </div>
 
         <!-- Projects Card -->
@@ -699,7 +701,7 @@
 
 
   <!-- Company I work Section -->
-  <section id="testmonial" class=" container mx-auto max-w-screen-xl rounded-[20px] p-10">
+  <section id="work" class=" container mx-auto max-w-screen-xl rounded-[20px] p-10">
     <div class="text-center pb-10">
       <p class="font-light text-base mb-4">Company I work</p>
       <h2 class="text-5xl mb-4 text-black">300+ Global Clients</h2>
@@ -728,8 +730,8 @@
     </div>
   </section>
 
-  <!-- Company I work Section Start-->
-  <section id="testmonial" class="mb-10 container mx-auto max-w-screen-xl rounded-[20px]">
+  <!-- Story Section Start-->
+  <section id="Story" class="mb-10 container mx-auto max-w-screen-xl rounded-[20px]">
     <div class="text-center  p-10">
       <p class="font-light text-base mb-4">Latest News</p>
       <h2 class="text-5xl mb-4">Stories</h2>
@@ -833,7 +835,53 @@
       </div>
     </div>
   </section>
-  <!-- Company I work Section End-->
+  <!-- Story Section End-->
+
+  <!-- Kickstart Section End-->
+  <section id="Kickstart" class="bg-white mb-10 container mx-auto max-w-screen-xl rounded-[20px]">
+    <div class="text-center">
+      <div class="lg:px-52 px-5 py-5 lg:py-20 bg-white rounded-[20px] about-content-part leading-3 lg:leading-[52px]">
+        <h2 class="mb-5 lg:text-[42px] md:text-4xl text-xl">
+          Are You Ready to <span>kickstart</span>your <span>project</span> with a touch of magic?
+        </h2>
+        <p class="text-base font-light mb-4">Reach out and let's make it happen ✨. I'm also available for full-time or
+          Part-time opportunities to push the boundaries of design and deliver exceptional work.</p>
+        <div class="mt-7 inline-block">
+          <a href="#"
+            class="theme-btn outline-none focus:ring-4 shadow-lg transform active:scale-x-75 transition-transform flex hover:bg-[var(--black-color)]">
+
+            <span class="mr-2">Let's Talk </span>
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Map section start -->
+  <section id="Map" class="bg-white mb-10 container mx-auto max-w-screen-xl">
+    <div class="container text-center">
+      <!-- Map Container -->
+      <div id="map-container" class="hidden mt-6 overflow-hidden">
+        <iframe class="w-full h-[450px]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9594081348165!2d-74.0046131!3d40.7195267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25981efc823f7%3A0x32f8e2b66317179f!2sNew%20Work%20City%20(CLOSED)!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <!-- Toggle Button -->
+      <button id="toggle-button"
+        class="w-full px-2 py-10 lg:text-6xl md:text-4xl text-xl map-word text-white hover:bg-black hover:text-white transition">
+        View My Live Map Location
+      </button>
+
+    </div>
+  </section>
+
+  <!-- Map section End -->
 
 
   <!-- Link to the JavaScript file -->

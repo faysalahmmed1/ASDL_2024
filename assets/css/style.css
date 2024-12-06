@@ -85,7 +85,6 @@ p {
 }
 
 .about-content-part h2 {
-  line-height: 52px;
   margin-bottom: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -289,4 +288,12 @@ p {
   font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.map-word {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-text-stroke: 1px #000;
+  color: transparent;
 }

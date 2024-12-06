@@ -49,10 +49,37 @@ document.querySelectorAll('.scroller').forEach((scroller) => {
     inner.style.animationDirection = direction === 'left' ? 'normal' : 'reverse';
 });
 
+// 
+function setActive(activeId) {
+    // Get all the <p> elements and reset their active state
+    const allPElements = document.querySelectorAll('ul p');
+    allPElements.forEach(p => {
+        // Hide underline and reset the active color
+        const span = p.querySelector('span');
+        if (span) {
+            span.classList.add('opacity-0'); // Hide underline
+        }
+        p.classList.remove('text-[#448C74]'); // Remove active color
+        p.classList.remove('border-b-green-500'); // Remove active color
+        p.classList.remove('border-b-2'); // Remove active color
+    });
+
+    // Find the clicked <p> element and set it as active
+    const activeElement = document.getElementById(activeId);
+    const activeSpan = activeElement.querySelector('span');
+    if (activeSpan) {
+        activeSpan.classList.remove('opacity-0'); // Show underline
+        activeSpan.classList.add('opacity-100'); // Make underline visible
+    }
+    activeElement.classList.add('text-[#448C74]'); // Add active color
+    activeElement.classList.add('border-b-green-500'); // Add active color
+    activeElement.classList.add('border-b-2'); // Add active color
+}
+// 
 
 const projectItem = document.getElementById("projectItem");
 const div = document.createElement('div');
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('showAll').click();
 })
 const displayProjects = (category) => {
@@ -198,4 +225,19 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         },
     });
+});
+
+
+// Map
+const toggleButton = document.getElementById('toggle-button');
+const mapContainer = document.getElementById('map-container');
+
+toggleButton.addEventListener('click', () => {
+    if (mapContainer.classList.contains('hidden')) {
+        mapContainer.classList.remove('hidden');
+        toggleButton.textContent = 'Hide Map';
+    } else {
+        mapContainer.classList.add('hidden');
+        toggleButton.textContent = 'View My Live Map Location';
+    }
 });
