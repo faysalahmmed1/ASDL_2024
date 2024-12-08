@@ -54,10 +54,17 @@ const projectItem = document.getElementById("projectItem");
 const div = document.createElement('div');
 document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById('showAll').click();
-})
+    document.getElementById('showAll').style.color = "#448C74";
+
+});
 const displayProjects = (category) => {
     // console.log(category);
     if (category === 'showAll') {
+        document.getElementById('showAll').style.color = '#448c74';
+        document.getElementById('webApp').style.color = '#444444';
+        document.getElementById('webinar').style.color = '#444444';
+        document.getElementById('educationalInitiative').style.color = '#444444';
+        document.getElementById('renewableEnergyProjects').style.color = '#444444';
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
                 <div class="border border-[#77777D33] rounded-md shadow-md w-80">
@@ -104,6 +111,12 @@ const displayProjects = (category) => {
         `;
     }
     else if (category === 'webApp') {
+        document.getElementById('webApp').style.color = '#448c74';
+        document.getElementById('showAll').style.color = '#444444';
+        document.getElementById('webinar').style.color = '#444444';
+        document.getElementById('educationalInitiative').style.color = '#444444';
+        document.getElementById('renewableEnergyProjects').style.color = '#444444';
+
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
                  <div class="border border-[#77777D33] rounded-md shadow-md w-80">
@@ -126,6 +139,11 @@ const displayProjects = (category) => {
         `;
     }
     else if (category === 'webinar') {
+        document.getElementById('webinar').style.color = '#448c74';
+        document.getElementById('showAll').style.color = '#444444';
+        document.getElementById('webApp').style.color = '#444444';
+        document.getElementById('educationalInitiative').style.color = '#444444';
+        document.getElementById('renewableEnergyProjects').style.color = '#444444';
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
                  <div class="border border-[#77777D33] rounded-md shadow-md w-80">
@@ -140,6 +158,11 @@ const displayProjects = (category) => {
         `;
     }
     else if (category === 'educationalInitiative') {
+        document.getElementById('educationalInitiative').style.color = '#448c74';
+        document.getElementById('webinar').style.color = '#444444';
+        document.getElementById('showAll').style.color = '#444444';
+        document.getElementById('webApp').style.color = '#444444';
+        document.getElementById('renewableEnergyProjects').style.color = '#444444';
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
                 <div class="border border-[#77777D33] rounded-md shadow-md w-80">
@@ -154,6 +177,11 @@ const displayProjects = (category) => {
         `;
     }
     else if (category === 'renewableEnergyProjects') {
+        document.getElementById('renewableEnergyProjects').style.color = '#448c74';
+        document.getElementById('webinar').style.color = '#444444';
+        document.getElementById('showAll').style.color = '#444444';
+        document.getElementById('webApp').style.color = '#444444';
+        document.getElementById('educationalInitiative').style.color = '#444444';
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
                  <div class="border border-[#77777D33] rounded-md shadow-md w-80">
