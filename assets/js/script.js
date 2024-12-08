@@ -270,3 +270,4 @@ buttons.forEach((button) => {
         toggleSlide(targetId, button);
     });
 });
+
