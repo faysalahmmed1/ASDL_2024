@@ -49,10 +49,37 @@ document.querySelectorAll('.scroller').forEach((scroller) => {
     inner.style.animationDirection = direction === 'left' ? 'normal' : 'reverse';
 });
 
+// 
+function setActive(activeId) {
+    // Get all the <p> elements and reset their active state
+    const allPElements = document.querySelectorAll('ul p');
+    allPElements.forEach(p => {
+        // Hide underline and reset the active color
+        const span = p.querySelector('span');
+        if (span) {
+            span.classList.add('opacity-0'); // Hide underline
+        }
+        p.classList.remove('text-[#448C74]'); // Remove active color
+        p.classList.remove('border-b-green-500'); // Remove active color
+        p.classList.remove('border-b-2'); // Remove active color
+    });
+
+    // Find the clicked <p> element and set it as active
+    const activeElement = document.getElementById(activeId);
+    const activeSpan = activeElement.querySelector('span');
+    if (activeSpan) {
+        activeSpan.classList.remove('opacity-0'); // Show underline
+        activeSpan.classList.add('opacity-100'); // Make underline visible
+    }
+    activeElement.classList.add('text-[#448C74]'); // Add active color
+    activeElement.classList.add('border-b-green-500'); // Add active color
+    activeElement.classList.add('border-b-2'); // Add active color
+}
+// 
 
 const projectItem = document.getElementById("projectItem");
 const div = document.createElement('div');
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('showAll').click();
     document.getElementById('showAll').style.color = "#448C74";
 
@@ -227,3 +254,48 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 });
+
+
+// Map
+const toggleButton = document.getElementById('toggle-button');
+const mapContainer = document.getElementById('map-container');
+
+toggleButton.addEventListener('click', () => {
+    if (mapContainer.classList.contains('hidden')) {
+        mapContainer.classList.remove('hidden');
+        toggleButton.textContent = 'Hide Map';
+    } else {
+        mapContainer.classList.add('hidden');
+        toggleButton.textContent = 'View My Live Map Location';
+    }
+});
+
+
+
+// Function to toggle visibility and manage "..." and button text
+function toggleSlide(slideId, button) {
+    const slide = document.getElementById(slideId); // Get the slide element
+    const dots = button.previousElementSibling.querySelector('.dots'); // Find the dots element
+
+    if (slide.classList.contains('hidden')) {
+        // If hidden, show the extra content and remove dots
+        slide.classList.remove('hidden');
+        if (dots) dots.classList.add('hidden'); // Hide the dots
+        button.innerText = 'See Less'; // Update button text
+    } else {
+        // If visible, hide the extra content and show dots
+        slide.classList.add('hidden');
+        if (dots) dots.classList.remove('hidden'); // Show the dots
+        button.innerText = 'See More'; // Reset button text
+    }
+}
+
+// Add event listeners to all toggle buttons
+const buttons = document.querySelectorAll('.toggle-btn');
+buttons.forEach((button) => {
+    const targetId = button.getAttribute('data-target'); // Get the associated slide ID
+    button.addEventListener('click', () => {
+        toggleSlide(targetId, button);
+    });
+});
+
