@@ -194,7 +194,7 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 4px dashed #5cb85c; /* Dashed border */
+  border: 4px dashed var(--primary-color); /* Dashed border */
   animation: rotate 20s linear infinite; /* Rotate animation */
 }
 
@@ -267,7 +267,7 @@ p {
 }
 
 .resume-item .content h4 {
-  margin: 12px 0px;
+  margin: 8px 0px;
   color: var(--subtitle-color);
   font-size: 20px;
 }
