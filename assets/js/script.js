@@ -411,18 +411,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Map
-const toggleButton = document.getElementById('toggle-button');
-const mapContainer = document.getElementById('map-container');
+// const toggleButton = document.getElementById('toggle-button');
+// const mapContainer = document.getElementById('map-container');
 
-toggleButton.addEventListener('click', () => {
-    if (mapContainer.classList.contains('hidden')) {
-        mapContainer.classList.remove('hidden');
-        toggleButton.textContent = 'Hide Map';
-    } else {
-        mapContainer.classList.add('hidden');
-        toggleButton.textContent = 'View My Live Map Location';
-    }
-});
+// toggleButton.addEventListener('click', () => {
+//     if (mapContainer.classList.contains('hidden')) {
+//         mapContainer.classList.remove('hidden');
+//         toggleButton.textContent = 'Hide Map';
+//     } else {
+//         mapContainer.classList.add('hidden');
+//         toggleButton.textContent = 'View My Live Map Location';
+//     }
+// });
 
 
 

@@ -92,11 +92,14 @@ p {
 
 .about-content-part h2 {
   margin-bottom: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 45px;
-  text-align: inherit;
+  text-align: justify;
+}
+
+.about-content-part h2 span {
+  -webkit-text-stroke: 1px #000;
 }
 
 .adress-field ul li {
@@ -219,7 +222,6 @@ p {
 }
 
 .single-resume {
-  padding: 40px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
