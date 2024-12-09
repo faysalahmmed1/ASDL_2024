@@ -88,8 +88,8 @@ const displayProjects = (category) => {
     if (category === 'showAll') {
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
-                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/exener.png" class="w-80 h-52"/>
+                <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/exener.png" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Renewable Energy Projects</p>
                         <h3 class="text-lg  text-[#444444] poppins-font my-2">Exener Group</h3>
@@ -113,8 +113,8 @@ const displayProjects = (category) => {
   </button>
                     </div>
                 </div>
-                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/pilsa.jpeg" class="w-80 h-52"/>
+                <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/pilsa.jpeg" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Educational Initiative</p>
                         <h3 class="text-lg text-[#444444] poppins-font my-2">Ptlsa Hospitaly School</h3>
@@ -138,8 +138,8 @@ const displayProjects = (category) => {
   </button>
                     </div>
                 </div>
-                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/Young_Talent_Social_Project.png" class="w-80 h-52"/>
+                <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/Young_Talent_Social_Project.png" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Web Application</p>
                         <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Global Educational Platforms.</h3>
@@ -166,8 +166,8 @@ Social project to promote young talent.
   </button>
                     </div>
                 </div>
-                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/Medicaluxe.webp" class="w-80 h-52"/>
+                <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/Medicaluxe.webp" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Medicaluxe</p>
                         <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Beauty & Health Care</h3>
@@ -192,8 +192,8 @@ Social project to promote young talent.
   </button>
                     </div>
                 </div>
-                <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/Webinar.jpeg" class="w-80 h-52"/>
+                <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/Webinar.jpeg" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Knowledge Sharing / Webinar</p>
 
@@ -222,15 +222,15 @@ Social project to promote young talent.
                 </div>
             </div>
         `;
-<<<<<<< HEAD
+
     } else if (category === 'webApp') {
-=======
+
     }
     else if (category === 'webApp') {
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
-                  <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/Young_Talent_Social_Project.png" class="w-80 h-52"/>
+                  <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/Young_Talent_Social_Project.png" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Web Application</p>
                         <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Global Educational Platforms.</h3>
@@ -256,8 +256,8 @@ Social project to promote young talent.
   </button>
                     </div>
                 </div>
-               <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/Medicaluxe.webp" class="w-80 h-52"/>
+               <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/Medicaluxe.webp" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Medicaluxe</p>
                         <h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">Beauty & Health Care</h3>
@@ -287,8 +287,8 @@ Social project to promote young talent.
     } else if (category === 'webinar') {
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
-                 <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/Webinar.jpeg" class="w-80 h-52"/>
+                 <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/Webinar.jpeg" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Knowledge Sharing / Webinar</p>
 
@@ -319,8 +319,8 @@ Social project to promote young talent.
         `;
     } else if (category === 'educationalInitiative') {
         projectItem.innerHTML = `
-             <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/pilsa.jpeg" class="w-80 h-52"/>
+             <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/pilsa.jpeg" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Educational Initiative</p>
                         <h3 class="text-lg text-[#444444] poppins-font my-2">PILSA HOSPITALITY SCHOOL</h3>
@@ -348,8 +348,8 @@ Social project to promote young talent.
     } else if (category === 'renewableEnergyProjects') {
         projectItem.innerHTML = `
             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
-                  <div class="border border-[#77777D33] rounded-md shadow-md w-80">
-                    <img src="/assets/images/exener.png" class="w-80 h-52"/>
+                  <div class="border border-[#77777D33] rounded-md shadow-md  ">
+                    <img src="/assets/images/exener.png" class="   "/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Renewable Energy Projects</p>
                         <h3 class="text-lg  text-[#444444] poppins-font my-2">Exener Group</h3>
@@ -452,4 +452,3 @@ buttons.forEach((button) => {
         toggleSlide(targetId, button);
     });
 });
-
