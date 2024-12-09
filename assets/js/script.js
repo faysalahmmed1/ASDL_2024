@@ -319,12 +319,15 @@ Social project to promote young talent.
         `;
     } else if (category === 'educationalInitiative') {
         projectItem.innerHTML = `
-             <div class="border border-[#77777D33] rounded-md shadow-md  ">
+             <div class="grid gap-20 md:grid-cols-2 lg:grid-cols-3">
+                 <div class="border border-[#77777D33] rounded-md shadow-md  ">
                     <img src="/assets/images/pilsa.jpeg" class="h-[220px] w-full"/>
                     <div class="px-5 pb-5">
                         <p class="poppins-font text-base text-[#444444] mt-2">Educational Initiative</p>
-                        <h3 class="text-lg text-[#444444] poppins-font my-2">PILSA HOSPITALITY SCHOOL</h3>
-                        <p class="text-sm"> Associated with Pilsa Hospitality Solutions (Hotel projects) </p>
+
+<h3 class="text-lg text-[#444444] poppins-font my-2 font-medium">PILSA HOSPITALITY SCHOOL</h3>
+                                         <p class="text-sm font-light">CAssociated with Pilsa Hospitality Solutions (Hotel projects) 
+</p>
                         <button class="inline-flex items-center gap-2 rounded-full border border-gray-500 mt-3 px-3 py-1 text-sm text-gray-600 hover:text-white focus:relative hover:bg-[#448c74]">
                         <a class='tracking-wider' href='http://pilsaeduca.com/' target='_blank'>Live View</a> <svg
                          xmlns="http://www.w3.org/2000/svg"
@@ -344,6 +347,7 @@ Social project to promote young talent.
   </button>
                     </div>
                 </div>
+            </div>
         `;
     } else if (category === 'renewableEnergyProjects') {
         projectItem.innerHTML = `
